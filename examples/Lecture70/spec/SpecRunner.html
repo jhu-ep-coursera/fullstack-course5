@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Restaurant Unit Tests</title>
+        <link rel="shortcut icon" type="image/png" href="../lib/jasmine-2.4.1/jasmine_favicon.png">
+        <link rel="stylesheet" type="text/css" href="../lib/jasmine-2.4.1/jasmine.css">
+    </head>
+    <body>
+        <!-- Libs -->
+        <script type="text/javascript" src="../lib/jasmine-2.4.1/jasmine.js"></script>
+        <script type="text/javascript" src="../lib/jasmine-2.4.1/jasmine-html.js"></script>
+        <script type="text/javascript" src="../lib/jasmine-2.4.1/boot.js"></script>
+
+        <script type="text/javascript" src="../lib/angular.min.js"></script>
+        <script type="text/javascript" src="../lib/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="../lib/ng-file-upload/ng-file-upload-all.min.js"></script>
+        <script type="text/javascript" src="../lib/angular-mocks.js"></script>
+
+        <!-- Source files -->
+
+        <!-- Common module -->
+        <script src="../src/common/common.module.js"></script>
+        <script src="../src/common/menu.service.js"></script>
+        <script src="../src/common/loading/loading.component.js"></script>
+        <script src="../src/common/loading/loading.interceptor.js"></script>
+
+        <!-- Public module -->
+        <script src="../src/public/public.module.js"></script>
+        <script src="../src/public/public.routes.js"></script>
+        <script src="../src/public/menu/menu.controller.js"></script>
+        <script src="../src/public/menu-items/menu-items.controller.js"></script>
+        <script src="../src/public/menu-category/menu-category.component.js"></script>
+        <script src="../src/public/menu-item/menu-item.component.js"></script>
+
+        <!-- Admin module -->
+        <script src="../src/admin/admin.module.js"></script>
+        <script src="../src/admin/admin.routes.js"></script>
+        <script src="../src/admin/menu-service.decorator.js"></script>
+        <script src="../src/admin/auth.interceptor.js"></script>
+        <script src="../src/admin/login/login.controller.js"></script>
+        <script src="../src/admin/services/login.service.js"></script>
+        <script src="../src/admin/services/current-user.service.js"></script>
+        <script src="../src/admin/category/category-list.component.js"></script>
+        <script src="../src/admin/category/category-items.controller.js"></script>
+        <script src="../src/admin/menu-item/menu-item-edit.controller.js"></script>
+        <script src="../src/admin/menu-item/menu-item-admin.component.js"></script>
+        <script src="../src/admin/services/authredirector.service.js"></script>
+
+        <!-- Unit tests -->
+
+        <!-- Common module -->
+        <script type="text/javascript" src="common/menu.service.spec.js"></script>
+        <script type="text/javascript" src="common/loading/loading.component.spec.js"></script>
+        <script type="text/javascript" src="common/loading/loading.interceptor.spec.js"></script>
+
+        <!-- Public module -->
+        <script type="text/javascript" src="public/menu-category/menu-category.component.spec.js"></script>
+        <script type="text/javascript" src="public/menu-item/menu-item.component.spec.js"></script>
+        <script type="text/javascript" src="public/menu-items/menu-items.controller.spec.js"></script>
+        <script type="text/javascript" src="public/menu/menu.controller.spec.js"></script>
+
+        <!-- Admin module -->
+        <script type="text/javascript" src="admin/menu-service.decorator.spec.js"></script>
+        <script type="text/javascript" src="admin/auth.interceptor.spec.js"></script>
+        <script type="text/javascript" src="admin/services/current-user.service.spec.js"></script>
+        <script type="text/javascript" src="admin/services/login.service.spec.js"></script>
+        <script type="text/javascript" src="admin/category/category-items.controller.spec.js"></script>
+        <script type="text/javascript" src="admin/category/category-list.component.spec.js"></script>
+        <script type="text/javascript" src="admin/login/login.controller.spec.js"></script>
+        <script type="text/javascript" src="admin/menu-item/menu-item-admin.component.spec.js"></script>
+        <script type="text/javascript" src="admin/services/current-user.service.spec.js"></script>
+    </body>
+</html>
+

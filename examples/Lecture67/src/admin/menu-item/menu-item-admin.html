@@ -1,0 +1,47 @@
+<h2>{{ $ctrl.menuItem.name }}</h2>
+
+<form name="$ctrl.form" novalidate>
+
+  <div class="form-group" ng-class="{'has-error' : $ctrl.form.name.$invalid}">
+    <label class="control-label">Name</label>
+    <input type="text" ng-model="$ctrl.menuItem.name" name="name" class="form-control" placeholder="Name" required>
+    <div class="control-label" ng-if="$ctrl.form.name.$invalid">Menu item name is a required field</div>
+  </div>
+
+  <div class="form-group" ng-class="{'has-error' : $ctrl.form.description.$invalid}">
+        <label class="control-label">Description</label>
+        <textarea class="form-control" name="description" ng-model="$ctrl.menuItem.description" required></textarea>
+        <div class="control-label" ng-if="$ctrl.form.description.$invalid">Menu item description is a required field</div>
+  </div>
+
+  <div ng-class="{'has-error': $ctrl.priceErrorMessage}">
+  <div class="form-group">
+    <label class="control-label">Price Small</label>
+    <div class="input-group admin-item-price">
+      <div class="input-group-addon">$</div>
+      <input class="form-control" placeholder="Price" type="number" min="1" step="any" ng-model="$ctrl.menuItem.price_small"/>
+      <div class="input-group-addon admin-item-portion">
+        <input type="text" placeholder="Portion" ng-model="$ctrl.menuItem.small_portion_name" />
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label">Price Large</label>
+    <div class="input-group admin-item-price">
+      <div class="input-group-addon">$</div>
+      <input class="form-control" placeholder="Price" type="number" min="1" step="any" ng-model="$ctrl.menuItem.price_large"/>
+      <div class="input-group-addon admin-item-portion">
+        <input type="text" placeholder="Portion" ng-model="$ctrl.menuItem.large_portion_name" />
+      </div>
+    </div>
+  </div>
+  <div class="control-label" ng-if="$ctrl.priceErrorMessage">{{$ctrl.priceErrorMessage}}</div>
+</div>
+
+<div class="pull-right">
+  <button class="btn btn-success" ng-click="$ctrl.save()" ng-disabled="!$ctrl.valid()">Save</button>
+  <button class="btn btn-default" ng-click="$ctrl.cancel()">Cancel</button>
+</div>
+
+</form>

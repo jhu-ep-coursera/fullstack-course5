@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app='ShoppingListDirectiveApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Directives with Transclude</title>
+  </head>
+  <body>
+    <h1>Directives with Transclude</h1>
+
+    <!-- LIST #1 - unlimited items -->
+    <div id="list" ng-controller='ShoppingListController as list'>
+      <div>
+        <input type="text" ng-model="list.itemName" placeholder="item name">
+        <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
+        <button ng-click="list.addItem();">Add Item</button>
+        <span>{{list.lastRemoved}}</span>
+      </div>
+
+      <shopping-list
+        id="list1"
+        items="list.items"
+        title="{{list.title}}"
+        on-remove="list.removeItem(index)">
+
+        <span class="warning">WARNING! WARNING! {{list.warning}}</span>
+
+      </shopping-list>
+
+      <shopping-list
+        id="list2"
+        items="list.items"
+        title="{{list.title}}"
+        on-remove="list.removeItem(index)">
+
+        <div>
+          <div class="title">OH, THE HORROR!</div>
+          <div>{{list.warning}}</div>
+        </div>
+
+      </shopping-list>
+      
+    </div>
+
+    </div>
+  </body>
+</html>

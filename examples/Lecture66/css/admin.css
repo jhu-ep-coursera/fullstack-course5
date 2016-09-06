@@ -1,0 +1,69 @@
+.login {
+    margin: 0 auto;
+    padding: 20px;
+}
+.login div:first-of-type {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.categories a {
+  color: #f6b319;
+}
+.categories div {
+  padding: 5px;
+}
+.categories .selected {
+    background-color: #557c3e;
+}
+
+.admin-img {
+  border: 4px solid #f6b319;
+  width: 250px;
+}
+.login-error {
+  color: #ff0000;
+  font-size: 1.2em;
+}
+
+.error {
+  color: #ff0000;
+}
+
+.has-error .control-label {
+  color: #ff0000;
+}
+.has-error .form-control {
+  border-color: #ff0000;
+}
+.has-error .input-group-addon {
+  border-color: #ff0000;
+  color: #ff0000;
+}
+
+.admin-item-list .row {
+  margin-bottom: 8px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+}
+.admin-item-titles {
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.admin-item-list button.btn.btn-primary {
+  background-color: #f6b319;
+  border-color: #f6b319;
+  color: #3F0C1F;
+}
+.admin-item-price {
+    width: 250px;
+}
+.admin-item-price input[type='number'] {
+    height: 36px;
+}
+.admin-item-portion input {
+    width: 60px;
+}

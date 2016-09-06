@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app='ShoppingListApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Custom Service</title>
+  </head>
+  <body>
+    <h1>Custom Service Through a Factory</h1>
+
+    <!-- Preconfigured List -->
+    <div id="list" ng-controller='ShoppingListController as list'>
+      <h3>Shopping List</h3>
+      <input type="text" ng-model="list.itemName" placeholder="item name">
+      <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
+      <button ng-click="list.addItem();">Add Item</button>
+      <ol>
+        <li ng-repeat="item in list.items">
+          {{ item.quantity }} of {{ item.name }}
+          <button ng-click="list.removeItem($index);">Remove Item</button>
+        </li>
+      </ol>
+      <!-- <div ng-if="list.errorMessage" class="error">Error: {{list.errorMessage}}</div> -->
+      <!-- <div ng-show="list.errorMessage" class="error">Error: {{list.errorMessage}}</div> -->
+      <div ng-hide="!list.errorMessage" class="error">Error: {{list.errorMessage}}</div>
+    </div>
+
+    </div>
+  </body>
+</html>

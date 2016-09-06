@@ -1,0 +1,19 @@
+<ui-view>
+  <h2>{{categoryItemsCtrl.category.name}}</h2>
+  <div class="admin-item-list">
+    <div class="row admin-item-titles">
+      <div class="col-md-3">Name</div>
+      <div class="col-md-6">Description</div>
+      <div class="col-md-2">Price</div>
+      <div class="col-md-1">Action</div>
+    </div>
+    <div class="row" ng-repeat="menuItem in categoryItemsCtrl.menuItems | orderBy: 'name'">
+      <div class="col-md-3">{{menuItem.name}}</div>
+      <div class="col-md-6">{{menuItem.description}}</div>
+      <div class="col-md-2">{{menuItem.price_small || '-'}} / {{menuItem.price_large}}</div>
+      <div class="col-md-1">
+        <button ui-sref="admin.auth.category.menuitem({menuItemId: menuItem.short_name})" class="btn btn-primary">Edit</button>
+      </div>
+    </div>
+  </div>
+</ui-view>

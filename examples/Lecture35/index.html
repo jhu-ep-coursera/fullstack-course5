@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app='ShoppingList'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Shopping List With Events</title>
+  </head>
+  <body>
+    <h1>Shopping List With Events:</h1>
+    <div id="list" ng-controller='ShoppingListController as list'>
+      <input type="text" ng-model="list.itemName" placeholder="item name">
+      <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
+      <button ng-click="list.addItem();">Add Item</button>
+      <span>{{ list.lastRemoved }}</span>
+
+      <shopping-list
+        items="list.items"
+        title="{{list.title}}"
+        on-remove="list.removeItem(index)"></shopping-list>
+
+    </div>
+
+    <loading-spinner></loading-spinner>
+
+    <!-- Libraries -->
+    <script src="lib/jquery-3.1.0.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+
+    <!-- Modules -->
+
+    <script src="src/shoppinglist/shoppinglist.module.js"></script>
+    <script src="src/spinner/spinner.module.js"></script>
+
+    <!-- 'ShoppingList' module artifacts -->
+    <script src="src/shoppinglist/shoppinglist.component.js"></script>
+    <script src="src/shoppinglist/shoppinglist.controller.js"></script>
+    <script src="src/shoppinglist/shoppinglist.factory.js"></script>
+    <script src="src/shoppinglist/weightlossfilter.service.js"></script>
+
+    <!-- 'Spinner' module artifacts -->
+    <script src="src/spinner/loadingspinner.component.js"></script>
+
+  </body>
+</html>

@@ -1,6 +1,3 @@
-# Course: Single Page Web Applications With AngularJS
+# Course: Single Page Web Applications with AngularJS
 
-This repository contains all of the source code used in the course, including the fully implemented restaurant web site.
-
-The course is ***FREE***, so if you haven't signed up yet, sign up here:
-https://www.coursera.org/learn/single-page-web-apps-with-angularjs
+This repository contains the source code for the [Single Page Web Applications with AngularJS](https://www.coursera.org/learn/single-page-web-apps-with-angularjs) hosted on [Coursera.org](https://www.coursera.org)

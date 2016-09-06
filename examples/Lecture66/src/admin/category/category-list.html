@@ -1,0 +1,8 @@
+<div class="categories">
+  <div class="category" ui-sref-active="selected"
+       ng-repeat="category in $ctrl.categories | orderBy: 'name'">
+    <a ui-sref="admin.auth.category({categoryId: category.short_name, category: category})">
+      {{category.name}}
+    </a>
+  </div>
+</div>
