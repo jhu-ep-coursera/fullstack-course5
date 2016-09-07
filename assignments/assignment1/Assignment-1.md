@@ -19,7 +19,7 @@ The idea of this assignment is to create a front-end application that presents t
 
 If the number of items in the textbox is less than or equal to 3 (e.g., 1, 2, or 3), a message should show up next to the textbox saying "Enjoy!". If the number of items is greater than 3 (4, 5, and above), the message "Enjoy!" should *change* to the message "Too much!"
 
-If the textbox is empty, no message should show up at all. 'Empty' here means either `""` (empty string) or a string with just spaces in it. (Hint: you will need to use `String.prototype.trim()` method to get rid of possible spaces in the textbox. [See documentation for that method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim).)
+If the textbox is empty and the user clicks the "Check If Too Much" button, the message "Please enter data first" should show up. 'Empty' here means either `""` (empty string) or a string with just spaces in it. (Hint: you will need to use `String.prototype.trim()` method to get rid of possible spaces in the textbox. [See documentation for that method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim).)
 
 ### Rules
 Breaking one of these rules will cause you to fail the assignment:
@@ -56,5 +56,5 @@ Here is what you will need to do to complete the assignment:
 
 ## BONUS (OPTIONAL AND NOT GRADED)
 Both of these can be done in a more advanced way, but can also be done with just what we've learned so far!
-* If the message is "Enjoy!", make the font color green. If the message is "Too much!", make the font color red.
-* If the message is "Enjoy!", make the border color around the textbox green. If the message is "Too much!", make the border color around the textbox red.
+* If the message is "Enjoy!" or "Too much!", make the font color green. If the message is "Please enter data first", make the font color red.
+* If the message is "Enjoy!" or "Too much!", make the border color around the textbox green. If the message is "Please enter data first", make the border color around the textbox red.
