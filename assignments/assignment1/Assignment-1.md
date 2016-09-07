@@ -25,6 +25,7 @@ If the textbox is empty, no message should show up at all. 'Empty' here means ei
 Breaking one of these rules will cause you to fail the assignment:
 * You are not allowed to use regular HTML `onclick` attribute to bind behavior to the button. You **must** use the AngularJS way of binding behavior.
 * At no point should your Javascript code look up *anything* in the DOM of the browser.
+* When the page first loads, the textbox must be empty. Do NOT pre-fill it with any text.
 
 ### Steps
 Here is what you will need to do to complete the assignment:
