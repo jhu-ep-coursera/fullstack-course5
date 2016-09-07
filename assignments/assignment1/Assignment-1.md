@@ -4,29 +4,29 @@ Module 1 Coding Assignment
 
 **CODING TIME!!!** You are able to code up your very first AngularJS application! How exciting is that?!
 
-### Time to Complete
+## Time to Complete
 It should take about an 1 hour or less.
 
 **Ask questions in Week 1 Discussion Forums if you get stuck! We are all learning, and going through getting stuck and then unstuck (even with someone’s help) can be a very valuable learning experience!**
 
-#### **DO NOT be scared by the length of this assignment! It’s really not so much at all. I just wanted to explain everything as clearly as I could and break it down into smaller steps for your benefit.**
+### **DO NOT be scared by the length of this assignment! It’s really not so much at all. I just wanted to explain everything as clearly as I could and break it down into smaller steps for your benefit.**
 
 
-### Assignment Instructions
+## Assignment Instructions
 
-#### General Idea
+### General Idea
 The idea of this assignment is to create a front-end application that presents the user with a textbox where they can list comma-separated items they usually eat for lunch. Once that's entered, the user has to click the "Check If Too Much" button.
 
 If the number of items in the textbox is less than or equal to 3 (e.g., 1, 2, or 3), a message should show up next to the textbox saying "Enjoy!". If the number of items is greater than 3 (4, 5, and above), the message "Enjoy!" should *change* to the message "Too much!"
 
 If the textbox is empty, no message should show up at all. 'Empty' here means either `""` (empty string) or a string with just spaces in it. (Hint: you will need to use `String.prototype.trim()` method to get rid of possible spaces in the textbox. [See documentation for that method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim).)
 
-#### Rules
+### Rules
 Breaking one of these rules will cause you to fail the assignment:
 * You are not allowed to use regular HTML `onclick` attribute to bind behavior to the button. You **must** use the AngularJS way of binding behavior.
 * At no point should your Javascript code look up *anything* in the DOM of the browser.
 
-#### Steps
+### Steps
 Here is what you will need to do to complete the assignment:
 
 1. (If you haven’t already) Create a GitHub.com account and a repository that you will use for this class.
@@ -46,14 +46,14 @@ Here is what you will need to do to complete the assignment:
   * Make sure that none of your variables/objects/functions "leak to the global scope". (Hint: IIFE)
 12. After you are done and satisfied with your solution, don't forget to add/commit/push your code to your repository.
 
-### **IMPORTANT REMINDERS:**
+## **IMPORTANT REMINDERS:**
 * Closely follow the submission guidelines for this assignment on Coursera.org
 * Make **sure** you provide the correct URL in your submission (it should be GitHub<b>.io</b>, *not* GitHub<b>.com</b>)
 * Make **sure** to TEST your assignment not just on your local machine, but ALSO once you deploy it on GitHub, using the URL you are providing as part of your submission.
 * This assignment will be peer-reviewed (and graded). The guidance will be given such that if submission instructions are not followed, the assignment is to be failed. Following instructions is very much part of software development. After all, that's what software requirements are - instructions to follow.
 
 
-### BONUS (OPTIONAL AND NOT GRADED)
+## BONUS (OPTIONAL AND NOT GRADED)
 Both of these can be done in a more advanced way, but can also be done with just what we've learned so far!
 * If the message is "Enjoy!", make the font color green. If the message is "Too much!", make the font color red.
 * If the message is "Enjoy!", make the border color around the textbox green. If the message is "Too much!", make the border color around the textbox red.
