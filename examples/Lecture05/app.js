@@ -1,5 +1,13 @@
-var elem = document.getElementById('target');
-console.log(elem.getAttribute('greeting'));
+(function () {
+'use strict';
 
-var sameElem = document.querySelector("[greeting]");
-console.log(sameElem);
+angular.module('myFirstApp', [])
+
+.controller('MyFirstController', function ($scope) {
+  $scope.name = "Yaakov";
+  $scope.sayHello = function () {
+    return "Hello Coursera!";
+  };
+});
+
+})();
