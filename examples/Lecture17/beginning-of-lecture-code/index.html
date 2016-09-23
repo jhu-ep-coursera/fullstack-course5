@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app='ShoppingListApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style> body { font-size: 1.2em; }</style>
+    <title>ng-repeat</title>
+  </head>
+  <body>
+    <h1>ng-repeat</h1>
+    <div ng-controller='ShoppingListController'>
+      <!-- Shopping List #1: -->
+      <h3>Shopping List:</h3>
+      <ul>
+        <li ng-repeat="item in shoppingList1">{{ item }}</li>
+      </ul>
+
+      <!-- Shopping List #2: -->
+      <!-- <ul>
+        <li ng-repeat="item in shoppingList2">Buy {{item.quantity}} of {{item.name}}(s)</li>
+      </ul> -->
+
+      <!-- Shopping List #3: -->
+      <!-- <input type="text" ng-model="shoppingList2[0].quantity">
+      -->
+      <!-- <ul>
+        <li ng-repeat="item in shoppingList2">{{$index + 1}}. Buy {{item.quantity}} of {{item.name}}(s)</li>
+      </ul>
+      -->
+      <!-- <input type="text" ng-model="newItemName" placeholder="item name">
+      <input type="text" ng-model="newItemQuantity" placeholder="item quantity">
+      <button ng-click="addToList()">Add To List</button>
+      -->
+    </div>
+  </body>
+</html>
