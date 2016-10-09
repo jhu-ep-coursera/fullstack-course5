@@ -43,7 +43,7 @@ function ShoppingListController1(ShoppingListFactory) {
 
   list.addItem = function () {
     shoppingList.addItem(list.itemName, list.itemQuantity);
-  }
+  };
 
   list.removeItem = function (itemIndex) {
     shoppingList.removeItem(itemIndex);
@@ -71,7 +71,7 @@ function ShoppingListController2(ShoppingListFactory) {
       list.errorMessage = error.message;
     }
 
-  }
+  };
 
   list.removeItem = function (itemIndex) {
     shoppingList.removeItem(itemIndex);

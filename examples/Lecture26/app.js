@@ -70,7 +70,7 @@ function ShoppingListController2(ShoppingListFactory) {
       list.errorMessage = error.message;
     }
 
-  }
+  };
 
   list.removeItem = function (itemIndex) {
     shoppingList.removeItem(itemIndex);

@@ -34,7 +34,7 @@ function MenuCategoriesController(MenuCategoriesService) {
 }
 
 
-MenuCategoriesService.$inject = ['$http', 'ApiBasePath']
+MenuCategoriesService.$inject = ['$http', 'ApiBasePath'];
 function MenuCategoriesService($http, ApiBasePath) {
   var service = this;
 

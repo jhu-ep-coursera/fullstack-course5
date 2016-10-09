@@ -58,7 +58,7 @@ function ShoppingListController(ShoppingListFactory) {
   list.addItem = function () {
     shoppingList.addItem(list.itemName, list.itemQuantity);
     list.title = origTitle + " (" + list.items.length + " items )";
-  }
+  };
 
   list.removeItem = function (itemIndex) {
     console.log("'this' is: ", this);

@@ -26,7 +26,7 @@ function ShoppingListController(ShoppingList) {
     } catch (error) {
       list.errorMessage = error.message;
     }
-  }
+  };
 
   list.removeItem = function (itemIndex) {
     ShoppingList.removeItem(itemIndex);
