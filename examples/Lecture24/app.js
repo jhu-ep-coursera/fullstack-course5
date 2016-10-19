@@ -17,7 +17,7 @@ function ShoppingListController(ShoppingListService) {
 
   list.addItem = function () {
     ShoppingListService.addItem(list.itemName, list.itemQuantity);
-  }
+  };
 
   list.removeItem = function (itemIndex) {
     ShoppingListService.removeItem(itemIndex);
@@ -25,7 +25,7 @@ function ShoppingListController(ShoppingListService) {
 }
 
 
-ShoppingListService.$inject = ['$q', 'WeightLossFilterService']
+ShoppingListService.$inject = ['$q', 'WeightLossFilterService'];
 function ShoppingListService($q, WeightLossFilterService) {
   var service = this;
 
@@ -100,7 +100,7 @@ function ShoppingListService($q, WeightLossFilterService) {
 }
 
 
-WeightLossFilterService.$inject = ['$q', '$timeout']
+WeightLossFilterService.$inject = ['$q', '$timeout'];
 function WeightLossFilterService($q, $timeout) {
   var service = this;
 

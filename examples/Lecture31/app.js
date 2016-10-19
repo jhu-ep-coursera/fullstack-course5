@@ -100,7 +100,7 @@ function ShoppingListController(ShoppingListFactory) {
   viewList.addItem = function () {
     shoppingList.addItem(viewList.itemName, viewList.itemQuantity);
     viewList.title = origTitle + " (" + viewList.items.length + " items )";
-  }
+  };
 
   viewList.removeItem = function (itemIndex) {
     console.log("'this' is: ", this);
