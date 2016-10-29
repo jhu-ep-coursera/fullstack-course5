@@ -4,10 +4,10 @@ describe('shoppingList directive', function() {
 
   var expectedHtml = '<h3 class="ng-binding">test title</h3>\
   <ol>\
-    <!-- ngRepeat: item in list.items --><li ng-repeat="item in list.items" class="ng-binding ng-scope"> \
+    <!-- ngRepeat: item in list.items --><li class="ng-binding ng-scope" ng-repeat="item in list.items"> \
       1 of item 1 \
       <button ng-click="list.removeItem($index);">Remove Item</button> \
-    </li><!-- end ngRepeat: item in list.items --><li ng-repeat="item in list.items" class="ng-binding ng-scope"> \
+    </li><!-- end ngRepeat: item in list.items --><li class="ng-binding ng-scope" ng-repeat="item in list.items"> \
       2 of item 2 \
       <button ng-click="list.removeItem($index);">Remove Item</button> \
     </li><!-- end ngRepeat: item in list.items --> \
