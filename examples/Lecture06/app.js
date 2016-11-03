@@ -3,7 +3,7 @@
 
 angular.module('NameCalculator', [])
 
-.controller('NameCaculatorController', function ($scope) {
+.controller('NameCalculatorController', function ($scope) {
   $scope.name = "";
   $scope.totalValue = 0;
 
