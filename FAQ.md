@@ -30,8 +30,9 @@ Here is a general guide as to what you should provide:
 3. Commit your code with the issue to GitHub and provide 2 links:
     * Link to your repository where people can clone your code and quickly look at it on their own machines.
     * Link to your *deployed* website (using github.io, i.e., GitHub Pages) so people don't have to spend their time trying to deploy your site just to see for themselves what's going on.
+    * Do not take a screenshot of your code. Screenshots maybe approapriate when you want to show what you're seeing in terms of layout, but for code - that's very unhelpful.
 
-    *Rarely (but it happens), it's appropriate to simply provide a **small** code snippet that you have a question about. When you do, make sure to use the <> code formatter on Coursera to place your code snippet into the post. Don't just copy/paste it straight into the text of the post. It's very hard to read.*
+    Rarely (but it happens), it's appropriate to simply provide a **small** code snippet that you have a question about. When you do, make sure to use the <> code formatter on Coursera to place your code snippet into the post. Don't just copy/paste it straight into the text of the post. It's very hard to read.*
 
 4. If you are having issues with installation, GitHub, etc., make sure to describe what you did with enough detail, and if there are errors or logs that you saw, you need to include those in your question. Simply saying "It doesn't let me push my code to the repository" won't do. If you tried to push the code and it didn't work, there were error messages that were displayed. Provide those messages, including the exact command you used.
 
