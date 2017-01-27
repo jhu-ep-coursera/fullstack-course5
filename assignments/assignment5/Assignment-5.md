@@ -15,7 +15,7 @@ It should take about an 1 hours or less. (This is just an estimate. People's bac
 ### General Idea
 Your starting point for this assignment will be the code in the `examples/Lecture59` folder.
 
-Your task is fairly simply.
+Your task is fairly simple.
 
 First, change the 2 buttons at the top of the website to say `My Info` and `Sign Up` instead of `About` and `Awards`.
 
