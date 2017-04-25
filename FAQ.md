@@ -56,7 +56,7 @@ By adding the track by `$index`, you will not get the duplicate error.
 
 ### What is MVVM? MVC vs MVVM?
 
-### Terminalogy question
+### Terminology question
 
 >You are using the term "ViewModel" for the design pattern of Angular. I hadn't heard "Model - View - ViewModel" before. I frequently >heard "Model - View - Controller" though (Rails etc.).
 
