@@ -30,6 +30,7 @@ function ShoppingListController(ShoppingList) {
 
   list.removeItem = function (itemIndex) {
     ShoppingList.removeItem(itemIndex);
+    list.errorMessage = "";
   };
 }
 
