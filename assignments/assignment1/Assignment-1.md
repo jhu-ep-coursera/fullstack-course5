@@ -5,7 +5,7 @@ Module 1 Coding Assignment
 **CODING TIME!!!** You are able to code up your very first AngularJS application! How exciting is that?!
 
 ## Time to Complete
-It should take about an 1 hour or less. (This is just an estimate. People's backgrounds differ, so for some people it will take longer to complete.)
+It should take about 1 hour or less. (This is just an estimate. People's backgrounds differ, so for some people it will take longer to complete.)
 
 **Ask questions in [Week 1 Discussion Forum](https://www.coursera.org/learn/single-page-web-apps-with-angularjs/discussions/weeks/1) if you get stuck! We are all learning, and going through getting stuck and then unstuck (even with someone’s help) can be a very valuable learning experience!**
 
