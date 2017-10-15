@@ -4,6 +4,9 @@
     <title>Shopping List Check Off</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <script src="angular.min.js"></script>
+    <script src="shoppingList.js"></script>
+    <link rel="stylesheet" href="style.css">
     <style>
       .emptyMessage {
         font-weight: bold;
@@ -22,29 +25,33 @@
       }
     </style>
   </head>
-<body>
+<body ng-app = 'shoppingList'>
   <div class="container">
   <h1>Shopping List Check Off</h1>
 
   <div class="row">
 
-    <!-- To Buy List -->
-    <div class="col-md-6">
+    
+    <div class="col-md-6" ng-controller = 'toBuyController as toBuy'>
+     <h2>Add To Buy:</h2>
+     <input type = 'text' placeholder="New Item Quantity" ng-model="toBuy.newItemName">
+     <input type = 'text' placeholder="New Item Name" ng-model="toBuy.newItemQuantity">
+     <button class='btn btn-default' ng-click = 'toBuy.addItem()'>Add new item </button>
+     <div ng-if="toBuy.errorMessage" class="error">Error: {{toBuy.errorMessage}} </div> 
      <h2>To Buy:</h2>
-     <ul>
-       <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
-       <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
+     <ul ng-repeat = 'item in toBuy.items'>
+       <li>{{item.quantity}} of {{item.name}} <button class="btn btn-default" ng-click="toBuy.checkOff($index)"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
      </ul>
-     <div class="emptyMessage">Everything is bought!</div>
+     <div class="emptyMessage" ng-if ='toBuy.items.length === 0'>Everything is bought!</div>
     </div>
 
-    <!-- Already Bought List -->
-    <div class="col-md-6">
+    
+    <div class="col-md-6" ng-controller="boughtController as bought">
      <h2>Already Bought:</h2>
-     <ul>
-       <li>Bought 10 cookies</li>
+     <ul ng-repeat="item in bought.items">
+       <li>{{item.quantity}} of {{item.name}} is bought! <button ng-click = "bought.reverseList($index)">put back to toBuy List</button></li>
      </ul>
-     <div class="emptyMessage">Nothing bought yet.</div>
+     <div class="emptyMessage" ng-show="bought.items.length === 0">Nothing bought yet.</div>
     </div>
   </div>
 </div>
