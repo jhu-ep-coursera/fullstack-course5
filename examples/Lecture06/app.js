@@ -4,6 +4,7 @@
 angular.module('NameCalculator', [])
 
 .controller('NameCalculatorController', function ($scope) {
+  var number = 1;
   $scope.name = "";
   $scope.totalValue = 0;
 

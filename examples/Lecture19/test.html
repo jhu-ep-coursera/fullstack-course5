@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app='testApp'>
+ <head >
+ 	<meta charset="utf-8">
+ 	<script src='angular.min.js'></script>
+ 	<script src='test.js'></script>
+ </head>
+
+ <body>
+ 	 <div ng-controller = 'parentController'>
+ 	 	{{value}}
+ 	 	{{point}}
+ 	 	
+ 	 	<div ng-controller ='childController'>
+ 	 		{{value}}
+ 	 		<div ng-controller = 'controller3 as ctrl3'>
+ 	 			{{this.value}}
+ 	 		</div>
+ 	 		
+ 	 	</div>
+ 	 </div>
+ </body>
+ </html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app = 'testApp'>
+  <head> 
+  <meta charset="utf-8">
+  <script src="angular.min.js"></script>
+  <script src="testApp.js"></script>
+  </head>
+  <body ng-controller = "testController">
+    <h1> Filtered List </h1>
+    <input type = "text" ng-model = "searchWord" placeholder="search" ng-keyup = 'search() '>
+    <!-- <ul>
+        <li ng-repeat = 'x in shoppingList | filter : search'> {{x}} </li> 
+    </ul> -->
+    <!-- <button ng-click = 'search()'> Click to search </button> -->
+    <ul>
+    	<li ng-repeat = 'x in filteredShoppingList'> {{x}} </li>
+    </ul>
+  </body>
+</html>

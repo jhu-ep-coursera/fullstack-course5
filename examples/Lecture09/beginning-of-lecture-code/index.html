@@ -12,7 +12,9 @@
         (and AngularJS)</h1>
     <div ng-controller='DIController'>
       <input type="text"
-             ng-model="name">
+             ng-model="name"
+             ng-blur='upper();'>
+      Input name is: {{name}}
     </div>
   </body>
 </html>

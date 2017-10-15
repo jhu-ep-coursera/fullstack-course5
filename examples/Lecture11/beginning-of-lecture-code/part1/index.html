@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html ng-app='MsgApp'>
   <head>
     <meta charset="utf-8">
@@ -15,3 +15,29 @@
     </div>
   </body>
 </html>
+ -->
+
+ <!DOCTYPE html>
+ <html ng-app='MsgApp'>
+    <head>
+       <meta charset="utf-8">
+       <script src='angular.min.js'></script>
+       <script src='app.js'></script>
+       <style> body {front-size: 1.2em;} </style>
+       <title> Expressions and Interpolation </title>
+    </head>
+    <body>
+        <h1>Expressions and Interpolation </h1>
+        <div ng-controller='MsgController'>
+            Message is: <br>
+            {{name}} has a message for you:
+            {{sayMessage()}}
+            <div>
+            <button ng-click='feedJennifer()'>Feed Jen</button>
+            <div>
+            <img src='images/yaakov_{{stateOfBeing}}.png'>
+            </div>
+            </div>
+        </div>
+    </body>
+ </html>

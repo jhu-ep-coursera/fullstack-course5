@@ -7,6 +7,7 @@ angular.module('BindingApp', [])
 BindingController.$inject = ['$scope'];
 function BindingController($scope) {
   $scope.firstName = "Yaakov";
+/*  $scope.fullName = '';*/
 
   $scope.showNumberOfWatchers = function () {
     console.log("# of Watchers: ", $scope.$$watchersCount);
@@ -23,6 +24,30 @@ function BindingController($scope) {
   $scope.logFullName = function () {
     console.log("Full name is: ", $scope.fullName);
   };
+
+
 }
 
 })();
+
+
+/*(function() {
+  'use strict';
+
+  angular.module('BindingApp', []) 
+  .controller('BindingController', BindingController);
+
+  BindingController.$inject('$scope');
+  function BindingController($scope) {
+    $scope.firstName = 'Jennifer';
+    $scope.lastName = '';
+
+    $scope.showNumberOfWatchers = function() {
+      console.log('# of Watchers', $scope.$$watchersCount);
+    };
+
+    $scope.setFullName = function() {
+      $c
+    }
+  }
+})();*/

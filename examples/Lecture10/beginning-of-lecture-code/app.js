@@ -1,8 +1,12 @@
 (function () {
 'use strict';
 
-angular.module('DIApp', [])
+/*angular.module('DIApp', [])
+.controller('DIController', ['$scope', '$filter', DIController]);*/
+angular.module('DIApp', []) 
 .controller('DIController', DIController);
+
+DIController.$inject = ['$scope', '$filter'];
 
 function DIController ($scope, $filter) {
   $scope.name = "Yaakov";

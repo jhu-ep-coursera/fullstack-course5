@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<script src="angular.min.js"></script>
+  	<script src="test.js"></script>
+  	<title>Custom service with factory</title>
+  	<link rel="stylesheet" href="style.css">
+  </head>
+  <body ng-app="testApp">
+  	<h1> ShoppingList </h1>
+  	<div id='List1' ng-controller='ShoppingList1 as list1'>
+  		<h2>ShoppingLis 1 </h2>
+  		<input type="text" ng-model="list1.itemName" placeholder="new Item name">
+  		<input type="text" ng-model="list1.quantity" placeholder="new Item quantity">
+  		<button ng-click="list1.addItem();"> Add Item </button>
+  		<ol>
+  			<li ng-repeat="item in list1.items"> 
+  				{{item.quantity}} of {{item.name}}
+  				<button ng-click="list1.removeItem($index);">Remove item</button>
+  			</li>
+  		</ol>
+  	<!-- 	<div class="error"> Error: {{list1.errorMessage}} </div> -->
+  	</div>
+
+   <div id='List2' ng-controller="ShoppingList2 as list2">
+   	<h2> ShoppingList 2 -- max 3 items</h2>
+   	<input type="text" ng-model="list2.itemName" placeholder="new Item name">
+  		<input type="text" ng-model="list2.quantity" placeholder="new Item quantity">
+  		<button ng-click="list2.addItem();"> Add Item </button>
+  		<ol>
+  			<li ng-repeat="item in list2.items"> 
+  				{{item.quantity}} of {{item.name}}
+  				<button ng-click="list2.removeItem($index);">Remove item</button>
+  			</li>
+  		</ol>
+  		<div class="error"> {{list2.errorMessage}} </div>
+  	</div>
+
+</html>
