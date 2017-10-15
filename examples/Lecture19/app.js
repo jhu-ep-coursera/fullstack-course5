@@ -35,9 +35,17 @@ function ChildController1($scope) {
 }
 
 // ** Controller As syntax
+// function ParentController2() {
+//   var parent = this;
+//   parent.value = 1;
+// }
+
 function ParentController2() {
   var parent = this;
   parent.value = 1;
+  parent.obj = {
+    val : 1,
+  };
 }
 ChildController2.$inject = ['$scope'];
 function ChildController2($scope) {
@@ -47,3 +55,5 @@ function ChildController2($scope) {
 }
 
 })();
+
+

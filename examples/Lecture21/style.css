@@ -1,0 +1,16 @@
+
+body {
+	font-size: 1.2em;
+}
+
+#List1, #List2 {
+	float: left;
+}
+
+#List2 {
+	margin-left: 40px;
+}
+
+.error {
+	color: blue;
+}

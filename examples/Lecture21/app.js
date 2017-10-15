@@ -48,7 +48,6 @@ function ShoppingListController2(ShoppingListFactory) {
     } catch (error) {
       list2.errorMessage = error.message;
     }
-
   }
 
   list2.removeItem = function (itemIndex) {

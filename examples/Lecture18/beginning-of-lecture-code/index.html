@@ -12,9 +12,13 @@
     <div ng-controller='ShoppingListController'>
       <!-- Searchable Shopping List: -->
       <h3>Shopping List:</h3>
+      <input type='text' ng-model='search' ng-keyup = 'filter()'>
       <ul>
-        <li ng-repeat="item in shoppingList">{{ item }}</li>
+       <!--  <li ng-repeat="item in shoppingList | filter : search ">{{ item }}</li> -->
+       <li ng-repeat='item in filterShoppingList'> {{item}} </li>
       </ul>
     </div>
   </body>
 </html>
+
+

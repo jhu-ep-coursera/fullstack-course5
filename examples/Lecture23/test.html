@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<script src="angular.min.js"></script>
+  	<script src="test.js"></script>
+  	<link rel="stylesheet" href="style.css">
+  	<title>ng-if, ng-show, ng-hide</title>
+  </head>
+  <body ng-app="testApp">
+  	<h1> ng-if, ng-show, ng-hide </h1>
+  	<div ng-controller="ShoppingListController as List1">
+  	<input type="text" ng-model="List1.itemName" placeholder="new item name">
+  	<input type="text" ng-model="List1.itemQuantity" placeholder="new item quantity">
+  	<button ng-click="List1.addItem()">Add item</button>
+  	<ol>
+  		<li ng-repeat="item in List1.items">
+  			{{item.quantity}} of {{item.name}}
+  			<button ng-click="List1.removeItem($index)">Remove item</button>
+  		</li>
+  	</ol>
+	  	<!-- <div class="error" ng-if="List1.errorMessage">Error: {{List1.errorMessage}} </div> -->
+	  	<!-- <div class="error" ng-hide="!List1.errorMessage">Error: {{List1.errorMessage}} </div> -->
+	  	<div class="error" ng-show="List1.errorMessage">Error: {{List1.errorMessage}} </div>
+  </div>
+</body>
+</html> 

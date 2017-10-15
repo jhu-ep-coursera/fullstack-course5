@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app = "testApp">
+ <head>
+   <meta charset="utf-8">
+   <script src = "angular.min.js"></script>
+   <script src ="test.js"></script>
+   <link rel = "stylesheet" href="style.css">
+   <title>Service with provider </title>
+  </head>
+
+  <body>
+  	<h1> ShoppingList with Service </h1>
+  	<div ng-controller="shoppingListController as list1">
+  		<input type="text" ng-model="list1.itemName" placeholder="newName">
+  		<input type="text" ng-model="list1.quantity" placeholder="newQuantity">
+  		<button ng-click="list1.addItem();">Add new item </button>
+  		<ol>
+  			<li ng-repeat="item in list1.items">
+  				{{item.quantity}} of {{item.name}}
+  				<button ng-click="list1.removeItem($index)"> remove Item </button>
+  			</li>
+  		</ol>
+  		<div class="error"> {{list1.errorMessage}}</div>
+  	</div>
+  </body>
