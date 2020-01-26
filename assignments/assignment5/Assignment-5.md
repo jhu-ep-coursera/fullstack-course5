@@ -5,7 +5,7 @@ Module 5 Coding Assignment
 **It's coding time! Woohoo!!!**
 
 ## Time to Complete
-It should take about an 1 hours or less. (This is just an estimate. People's backgrounds differ, so for some people it will take longer to complete.)
+It should take about 1 hours or less. (This is just an estimate. People's backgrounds differ, so for some people it will take longer to complete.)
 
 **Ask questions in [Week 5 Discussion Forum](https://www.coursera.org/learn/single-page-web-apps-with-angularjs/discussions/weeks/5) if you get stuck! We are all learning, and going through getting stuck and then unstuck (even with someone’s help) can be a very valuable learning experience!**
 

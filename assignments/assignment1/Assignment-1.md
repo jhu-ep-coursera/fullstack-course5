@@ -5,7 +5,7 @@ Module 1 Coding Assignment
 **CODING TIME!!!** You are able to code up your very first AngularJS application! How exciting is that?!
 
 ## Time to Complete
-It should take about an 1 hour or less. (This is just an estimate. People's backgrounds differ, so for some people it will take longer to complete.)
+It should take about 1 hour or less. (This is just an estimate. People's backgrounds differ, so for some people it will take longer to complete.)
 
 **Ask questions in [Week 1 Discussion Forum](https://www.coursera.org/learn/single-page-web-apps-with-angularjs/discussions/weeks/1) if you get stuck! We are all learning, and going through getting stuck and then unstuck (even with someone’s help) can be a very valuable learning experience!**
 
@@ -40,7 +40,7 @@ Here is what you will need to do to complete the assignment:
 4. HTML/CSS for the assignment
   * Option 1: Copy the **contents** of the folder `assignment1-starter-code` into the newly created folder from the previous step. If you cloned this repository, the assignment 1 folder is located in `root_dir_of_your_local_repo/assignments/assignment1/assignment1-starter-code`
   * Option 2: Create the HTML/CSS yourself. Make sure to name the HTML file `index.html`. The only requirement is that your HTML have a textbox, a button, and a region where you will output the message. The rest is up to you.
-5. Import AngularJS into your project and place a `<script>` tag right before the `</body>` tag.
+5. Import AngularJS into your project by placing a `<script>` tag right before the `</body>` tag.
 6. Declare `ng-app` either on the `html` or the `body` element. Name your app `LunchCheck`.
 7. Create `app.js` in your project and declare an Angular module to match your `ng-app` declaration.
 8. Go back to `index.html` and declare a controller for some portion of your page that contains the textbox, the button, and the message placeholder.
@@ -61,4 +61,4 @@ Here is what you will need to do to complete the assignment:
 The first 2 of these can be done in a more advanced way, but can also be done with just what we've learned so far!
 * If the message is "Enjoy!" or "Too much!", make the font color green. If the message is "Please enter data first", make the font color red.
 * If the message is "Enjoy!" or "Too much!", make the border color around the textbox green. If the message is "Please enter data first", make the border color around the textbox red.
-* Implement this case `item 1, item2,,item3` or this case `item 1, item2, ,item3` as not counting an 'empty' item towards the count of how many items there are in the list. Please *make sure* to put a comment somewhere next to the input textbox stating that you do NOT consider and empty item, i.e., `, ,` as an item towards to the count, so whoever is grading your assignment doesn't erroneously mark that as an error.
+* Implement this case `item 1, item2,,item3` or this case `item 1, item2, ,item3` as not counting an 'empty' item towards the count of how many items there are in the list. Please *make sure* to put a comment somewhere next to the input textbox stating that you do NOT consider an empty item, i.e., `, ,` as an item towards to the count, so whoever is grading your assignment doesn't erroneously mark that as an error.
