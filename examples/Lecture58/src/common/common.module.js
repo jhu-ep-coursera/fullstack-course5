@@ -2,7 +2,7 @@
 "use strict";
 
 angular.module('common', [])
-.constant('ApiPath', 'https://ychaikin-course5.herokuapp.com')
+.constant('ApiPath', 'https://coursera-jhu-default-rtdb.firebaseio.com')
 .config(config);
 
 config.$inject = ['$httpProvider'];
