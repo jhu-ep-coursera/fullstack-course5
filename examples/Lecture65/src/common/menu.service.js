@@ -28,18 +28,6 @@ function MenuService($http, ApiPath) {
   };
 
 
-  service.getMenuItems = function (shortName) {
-    var config = {};
-    if (shortName) {
-      config.params = {category: shortName};
-    }
-
-    return $http.get(ApiPath + '/menu_items.json', config).then(function (response) {
-      return response.data;
-    });
-  }
-
-
   service.getCategory = function (shortName) {
     return $http.get(ApiPath + '/categories/' + shortName + '.json').then(function (response) {
       return response.data;

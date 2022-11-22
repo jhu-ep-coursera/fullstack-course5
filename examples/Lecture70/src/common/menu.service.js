@@ -17,6 +17,7 @@ function MenuService($http, ApiPath) {
 
 
   service.getMenuItems = function (category) {
+    console.log('first function', category);
     var config = {};
     if (category) {
       config.params = {'category': category};
@@ -26,18 +27,6 @@ function MenuService($http, ApiPath) {
       return response.data;
     });
   };
-
-
-  service.getMenuItems = function (shortName) {
-    var config = {};
-    if (shortName) {
-      config.params = {category: shortName};
-    }
-
-    return $http.get(ApiPath + '/menu_items.json', config).then(function (response) {
-      return response.data;
-    });
-  }
 
 
   service.getCategory = function (shortName) {
