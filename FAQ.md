@@ -1,5 +1,10 @@
 # Fullstack Course 5 Frequently Asked Questions
 
+## November, 2022 Update
+Instead of Heroku URLs to retrieve the data for the David Chu's China Bistro restraurant website, which we build at the end of the course, we are now using Google Firebase. The new URL is https://coursera-jhu-default-rtdb.firebaseio.com/categories.json for retrieving all categories of items and https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/{category_short_name}.json for retrieving all items for a single category (e.g., https://coursera-jhu-default-rtdb.firebaseio.com/menu_items/L.json for all items for the `L` Lunch category).
+
+Note that the example code in lectures 60 and above are still using Heroku URLs because, technically, those lectures are not officially part of the course and the full restaurant app is actually deployed on a paid Heroku plan.
+
 ## Table of Contents
 - [How to ask and get your question answered - A MUST READ!](#how-to-ask-and-get-your-question-answered-a-must-read)
 - [Do I have to use Atom?](#do-i-have-to-use-atom)
